@@ -28,7 +28,7 @@ let safeRules = UITextInputPasswordRules(rules: [.allowed(.unicode),
 
 ## Installation
 
-Just drag TypeSafePassword.swift into your project and you're good to go.
+Just drag PasswordRuleType.swift into your project and you're good to go.
 
 [license-url]: LICENSE
 [swift-image]:https://img.shields.io/badge/swift-4.2-orange.svg
