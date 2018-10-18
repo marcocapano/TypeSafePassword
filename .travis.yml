@@ -2,4 +2,4 @@ language: objective-c
 osx_image: xcode10
 
 script:
-  - xcodebuild -project Shortcuts Gallery.xcodeproj -scheme Shortcuts Gallery -sdk iphonesimulator build test | xcpretty
+  - xcodebuild -project  TypeSafePassword.xcodeproj -scheme TypeSafePassword -sdk iphonesimulator build test | xcpretty
