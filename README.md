@@ -1,4 +1,8 @@
 # TypeSafePassword
+[![Swift Version][swift-image]][swift-url]
+[![License][license-image]][license-url]
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com) 
+[![Build Status](https://travis-ci.org/marcocapano/TypeSafePassword.svg?branch=master)](https://travis-ci.org/marcocapano/TypeSafePassword)
 A type-safe way to write password rules in Swift.
 
 ### The problem
@@ -22,3 +26,6 @@ let safeRules = UITextInputPasswordRules(rules: [.allowed(.unicode),
 ## Installation
 
 Just drag TypeSafePassword.swift into your project and you're good to go.
+
+[swift-url]: https://swift.org/
+[license-url]: LICENSE
