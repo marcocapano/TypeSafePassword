@@ -10,6 +10,8 @@
 		4C7B28C32178EAD500FF44E9 /* TypeSafePassword.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C7B28B92178EAD400FF44E9 /* TypeSafePassword.framework */; };
 		4C7B28C82178EAD500FF44E9 /* TypeSafePasswordTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7B28C72178EAD500FF44E9 /* TypeSafePasswordTests.swift */; };
 		4C7B28CA2178EAD500FF44E9 /* TypeSafePassword.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C7B28BC2178EAD500FF44E9 /* TypeSafePassword.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C7B28D62178EB0900FF44E9 /* PasswordRuleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7B28D52178EB0900FF44E9 /* PasswordRuleType.swift */; };
+		4C7B28D72178EB0900FF44E9 /* PasswordRuleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7B28D52178EB0900FF44E9 /* PasswordRuleType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,7 @@
 		4C7B28C22178EAD500FF44E9 /* TypeSafePasswordTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TypeSafePasswordTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C7B28C72178EAD500FF44E9 /* TypeSafePasswordTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeSafePasswordTests.swift; sourceTree = "<group>"; };
 		4C7B28C92178EAD500FF44E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C7B28D52178EB0900FF44E9 /* PasswordRuleType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordRuleType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +76,7 @@
 			children = (
 				4C7B28BC2178EAD500FF44E9 /* TypeSafePassword.h */,
 				4C7B28BD2178EAD500FF44E9 /* Info.plist */,
+				4C7B28D52178EB0900FF44E9 /* PasswordRuleType.swift */,
 			);
 			path = TypeSafePassword;
 			sourceTree = "<group>";
@@ -148,6 +152,7 @@
 				TargetAttributes = {
 					4C7B28B82178EAD400FF44E9 = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
 					};
 					4C7B28C12178EAD500FF44E9 = {
 						CreatedOnToolsVersion = 10.0;
@@ -194,6 +199,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C7B28D62178EB0900FF44E9 /* PasswordRuleType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,6 +207,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C7B28D72178EB0900FF44E9 /* PasswordRuleType.swift in Sources */,
 				4C7B28C82178EAD500FF44E9 /* TypeSafePasswordTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -341,6 +348,7 @@
 		4C7B28CE2178EAD500FF44E9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -358,6 +366,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mrc.TypeSafePassword;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -366,6 +375,7 @@
 		4C7B28CF2178EAD500FF44E9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -391,6 +401,7 @@
 		4C7B28D12178EAD500FF44E9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 345UEZ6M2K;
 				INFOPLIST_FILE = TypeSafePasswordTests/Info.plist;
@@ -409,6 +420,7 @@
 		4C7B28D22178EAD500FF44E9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 345UEZ6M2K;
 				INFOPLIST_FILE = TypeSafePasswordTests/Info.plist;

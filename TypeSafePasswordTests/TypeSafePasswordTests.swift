@@ -7,28 +7,24 @@
 //
 
 import XCTest
+import UIKit
 @testable import TypeSafePassword
 
 class TypeSafePasswordTests: XCTestCase {
 
-    override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    func testPasswordRuleGeneration() {
+        let rules: [PasswordRuleType] = [.allowed(.unicode), .required(.digits), .minLength(8), .maxLength(32)]
+        let rule = UITextInputPasswordRules(rules: rules)
+        let expectedDescriptor = "allowed: unicode; required: digits; minlength: 8; maxlength: 32"
+        
+        XCTAssertEqual(rule.passwordRulesDescriptor, expectedDescriptor)
     }
-
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    
+    func testEmptyRules() {
+        let rule = UITextInputPasswordRules(rules: [PasswordRuleType]())
+        let expectedDescriptor = ""
+        
+        XCTAssertEqual(rule.passwordRulesDescriptor, expectedDescriptor)
     }
 
 }
