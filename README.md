@@ -1,4 +1,5 @@
 # TypeSafePassword
+
 [![Swift Version][swift-image]](https://img.shields.io/badge/Swift-4.2-F16D39.svg?style=flat)
 [![License][license-image]][license-url]
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com) 
@@ -28,3 +29,5 @@ let safeRules = UITextInputPasswordRules(rules: [.allowed(.unicode),
 Just drag TypeSafePassword.swift into your project and you're good to go.
 
 [license-url]: LICENSE
+[swift-image]:https://img.shields.io/badge/swift-4.2-orange.svg
+[license-image]: https://img.shields.io/badge/License-MIT-blue.svg
