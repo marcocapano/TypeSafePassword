@@ -4,6 +4,8 @@
 [![License][license-image]][license-url]
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com) 
 [![Build Status](https://travis-ci.org/marcocapano/TypeSafePassword.svg?branch=master)](https://travis-ci.org/marcocapano/TypeSafePassword)
+
+
 A type-safe way to write password rules in Swift.
 
 ### The problem
